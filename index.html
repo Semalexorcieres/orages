@@ -28,7 +28,7 @@
   }
   .datebar {
     display:inline-flex; align-items:center; gap:10px; align-self:flex-start;
-    background:#0c2740; color:#fff; padding:7px 18px; border-radius:8px;
+    background:#214e92; color:#fff; padding:7px 18px; border-radius:8px;
     font-size:19px; font-weight:600; letter-spacing:.02em;
   }
   .datebar svg { width:19px; height:19px; }
@@ -44,7 +44,7 @@
 
   .subtitle {
     font-family:'Figtree',sans-serif; font-weight:600; font-size:25px;
-    line-height:1.16; color:#12365a; max-width:660px;
+    line-height:1.16; color:#111; max-width:660px;
   }
   .subtitle b { color:#e2231a; font-weight:700; }
 
@@ -70,17 +70,17 @@
 
   /* JAUGE horizontale à 3 zones + curseur flèche */
   .gauge { width:100%; display:flex; flex-direction:column; gap:0; }
-  .cursor-row { position:relative; height:34px; }
+  .cursor-row { position:relative; height:36px; }
   .cursor {
-    position:absolute; top:0; transform:translateX(-50%);
+    position:absolute; bottom:-1px; transform:translateX(-50%);
     display:flex; flex-direction:column; align-items:center;
     transition:left .4s ease;
   }
   .cursor .lbl {
-    font-family:'Figtree',sans-serif; font-weight:700; font-size:13px; color:#b31c15;
-    white-space:nowrap; margin-bottom:2px;
+    font-family:'Figtree',sans-serif; font-weight:700; font-size:13px; color:#0c2740;
+    white-space:nowrap; margin-bottom:1px; line-height:1;
   }
-  .cursor svg { width:24px; height:24px; color:#b31c15; }
+  .cursor svg { width:20px; height:20px; color:#0c2740; display:block; margin-bottom:0; }
   .cursor.flash { animation:blink 1s steps(1) infinite; }
 
   .bar { display:flex; width:100%; height:26px; border-radius:13px; overflow:hidden; }
